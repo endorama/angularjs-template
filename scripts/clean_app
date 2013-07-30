@@ -1,0 +1,9 @@
+#!/bin/bash
+# Remove compiled files from app/ folder. Ignore app/vendor folder
+
+rm -fr .sass-cache
+cd app                                                  # enter app/ folder
+find css -name "*.css" -type f -exec rm -i '{}' +       # delete css
+find js -name "*.js" -type f -exec rm -i '{}' +         # delete js
+find locales -name "*.json" -type f -exec rm -i '{}' +  # delete json
+find . -name "*.html" -type f -exec rm -i '{}' +        # delete html

@@ -1,0 +1,10 @@
+#!/bin/bash
+# Create the relevant RVM gemset files to be used by RVM
+
+if [ $# -lt 2 ]; then
+  echo "No arguments supplied"
+  echo "Usage: scripts/create_rvm_gemset RUBY_VERSION RUBY_GEMSET"
+fi
+
+echo "$1" > .ruby-version
+echo "$2" > .ruby-gemset

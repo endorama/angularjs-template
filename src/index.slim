@@ -1,0 +1,24 @@
+| <!doctype html>
+html lang="en" ng-app="myApp"
+  head
+    meta charset="utf-8"
+      title My AngularJS App
+      link href="css/myapp.css" rel="stylesheet"
+  body
+    div ng-view=""
+    div
+      | Angular seed app: v
+      span app-version=""
+    
+    / Load i18next for localization ( view vendor/i18next/readme.md )
+    script src="vendor/i18next/i18next-1.6.2.min.js"
+    script src="vendor/i18next/angular-directive.js"
+    
+    / In production use a CDN
+    script src="vendor/angular/angular.js"
+    
+    script src="js/app.js"
+    script src="js/services/service.js"
+    script src="js/controllers/controller.js"
+    script src="js/filters/filter.js"
+    script src="js/directives/directive.js"
